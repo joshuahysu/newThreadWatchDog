@@ -10,7 +10,12 @@ namespace newThreadWatchDog
         public static string connectionString;//db connection String
         private ThreadWatchDog() {
         }
-        public ThreadWatchDog(Action newThreadFunc,string sql)//sql=$"insert WatchDogTable('ID','threadName','datetime') values('{Guid.new()}','{}','{datetime.now}')"
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="newThreadFunc">you func</param>
+        /// <param name="sql">Example sql=$"insert WatchDogTable('ID','threadName','datetime') values('{Guid.new()}','{}','{datetime.now}')"</param>
+        public ThreadWatchDog(Action newThreadFunc,string sql)
         {
             try
             {
